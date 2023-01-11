@@ -10,7 +10,7 @@ const Todoitem = () => {
   console.log(param.id)
 
     const fetchdata=()=>{
-        axios.get(`http://localhost:8080/todo/${param.id}`)
+        axios.get(`https://scary-turtleneck-shirt-fawn.cyclic.app/todo/${param.id}`)
         .then((r)=>{
             console.log(r.data)
             setData([r.data])
@@ -21,7 +21,7 @@ const Todoitem = () => {
     function edittodo(text){
       if(text){
         axios({
-          url:`http://localhost:8080/todo/${param.id}`,
+          url:`https://scary-turtleneck-shirt-fawn.cyclic.app/todo/${param.id}`,
           method:"PATCH",
           data:{
               title:text

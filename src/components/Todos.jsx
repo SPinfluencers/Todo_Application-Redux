@@ -14,7 +14,7 @@ const Todos = () => {
 
     const getTodo=()=>{
        dispatch(gettodorequest())
-       axios.get(" http://localhost:8080/todo")
+       axios.get("https://scary-turtleneck-shirt-fawn.cyclic.app/todo")
        .then((r)=>{
         dispatch(gettodosucess(r.data))
        })
@@ -27,7 +27,7 @@ const Todos = () => {
     function toggletodo(id,newstatus){
       dispatch(gettodorequest())
       axios({
-         url:`http://localhost:8080/todo/${id}`,
+         url:`https://scary-turtleneck-shirt-fawn.cyclic.app/todo/${id}`,
       method:"PATCH",
         data:{
          status:newstatus
@@ -43,7 +43,7 @@ const Todos = () => {
 
     function deletetodo(id){
       axios({
-         url:`http://localhost:8080/todo/${id}`,
+         url:`https://scary-turtleneck-shirt-fawn.cyclic.app/todo/${id}`,
          method:"DELETE"
         })
         .then((r)=>{

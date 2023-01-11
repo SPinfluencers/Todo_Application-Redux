@@ -13,7 +13,7 @@ const Todoinput = ({getTodo}) => {
         status:false
       }
       dispatch(posttodorequest())
-      return axios.post("http://localhost:8080/todo",payload)
+      return axios.post("https://scary-turtleneck-shirt-fawn.cyclic.app/todo",payload)
       .then((r)=>{
         console.log(r.data)
         dispatch(posttodosucess(r.data)) 
