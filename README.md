@@ -7,7 +7,7 @@
 - Javascript
 - React
 - Redux
-- 
+- json server
 
 # Crude Application 
 
