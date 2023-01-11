@@ -7,6 +7,7 @@
 - Javascript
 - React
 - Redux
+- 
 
 # Crude Application 
 
